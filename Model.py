@@ -5,7 +5,10 @@ import csv
 # strength, toughness, wounds, attacks, leadership, save, invulnerable save, feel no pain, weapons, abilities,
 # base size (diameter in inches)
 class Model:
-    def __init__(self, file):
+    def __init__(self, file, model_id=''):
+
+        self.model_id = model_id
+
         with open(file) as csvfile:
             readCSV = csv.reader(csvfile)
 

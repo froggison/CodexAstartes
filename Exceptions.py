@@ -1,0 +1,2 @@
+class CSVFileException(Exception):
+    pass
